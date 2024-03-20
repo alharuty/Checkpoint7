@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="images/logo-javascript.png">
+
+    <script src="https://kit.fontawesome.com./0f3793b933.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/cabecero.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" integrity="sha512-WyDOVdz9D3HP+Q/UmBea6V0UzGf6W9IVRcVl2S8+gU5+eB6GmWSf8NwGwFyplJZ2J3sybWSiIqGCFitKY0yBGA==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-mv4Kj2eMWekNU2W4WYkrlH4sUTDN6vWLvZ0oY2LDyF02SdSYKZpEmYmG/lvFv5qwf1dY1GxibQI6+PfCguQLEQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-javascript.min.js" integrity="sha512-g64Gyj8TC9zK+6g6L/0vcsJFy5IVtFuKvSKkZ6qebBrQUmvqnMxoJNfX1SDn8PwxazE4mMq6TswMzmQULjs9sA==" crossorigin="anonymous"></script>
+
+
+    <title>Curso de Java Script</title>
+</head>
+<body>
+    <div class="contenedor-general">
+        <div class="cabecero">
+            <div class="contenedor" id="servicios">
+
+                <div class="titulo" id="header">CONCEPTOS BÁSICOS DE</div>
+                
+                <div class="mi-logo">
+                    <img src="images/logo-javascript.png"></img>
+                </div>
+                
+                <!-- TODO: MEJORAR CUANDO SE HACE TAMAÑO MOVIL -->
+                <a href="#pregunta1"><div class="contenedor-izquierdo" id="javascript">¿QUÉ DIFERENCIA A JAVASCRIPT DE CUALQUIER OTRO LENGUAJE?</div></a>
+                <a href="#pregunta2"><div class="contenedor-derecho" id="datos-js">¿CUÁLES SON LOS TIPOS DE DATOS JS?</div></a>
+                <a href="#pregunta3"><div class="contenedor-izquierdo" id="string-funciones">¿CUÁLES SON LAS FUNCIONES DE STRING MÁS COMUNES EN JS?</div></a>
+                <a href="#pregunta4"><div class="contenedor-derecho" id="condicional">¿QUÉ ES UN CONDICIONAL?</div></a>
+                <a href="#pregunta5"><div class="contenedor-izquierdo" id="operador-ternario">¿QUÉ ES UN OPERADOR TERNARIO?</div></a>
+                <a href="#pregunta6"><div class="contenedor-derecho" id="declaracion-expresion">DECLARACIÓN ó EXPRESIÓN DE FUNCIÓN</div></a>
+                <a href="#pregunta7"><div class="contenedor-izquierdo" id="keyword-this">¿QUÉ ES LA PALABRA CLAVE 'this'?</div></a>
+            </div>
+        </div>
+
+        <div class="preguntas">
+            <div class="pregunta" id="pregunta1">
+                <div class="sub-titulo">¿QUÉ DIFERENCIA A JAVASCRIPT DE CUALQUIER OTRO LENGUAJE?</div>
+
+                <div class="contenedor-respuesta">
+                    <div class="texto">
+                        <p>La gran diferencia entre JavaScript  y otros idiomas es que JavaScript es el único lenguaje de programación que nuestro navegador puede leer directamente.  Por esta razón,  es que podemos escribir y ejecutar nuestro código JavaScript en nuestro propio navegador, sin necesidad de tener ninguna herramienta, sistema o aplicación instalados en nuestro ordenador de forma adicional. 
+                        <br> Esta característica hace que este lenguaje sea versátil y que muchos de los programas y aplicaciones más potentes y conocidos, sean escritos en JavaScript.
+                        <br> También hay que destacar que JavaScript está en casi todo el mundo de desarrollo, ya que de un forma u otra siempre se utiliza código de este lenguaje, porque proporciona muchas alternativas y usos que podemos integrar en nuestros programas.
+                        </p>
+                    </div>
+
+                    <div class="demostracion">
+                        <div class="imagen">
+                            <div class="texto">PASO 1: Abrimos nuestro navegador.</div>
+                            <img src="images/paso-1.png"></img>
+                        </div>
+                        <div class="imagen">
+                            <div class="texto">PASO 2: Hacemos click derecho y escogemos la opción Inspeccionar y después hacemos click en la parte inferior donde dice: Consola. </div>
+                            <img src="images/paso-2.png"></img>
+                        </div>
+                        <div class="imagen">
+                            <div class="texto">PASO 3: Ahora ya podemos escribir nuestro código JavaScript en la consola. </div>
+                            <img src="images/paso-3.png"></img>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="pregunta" id="pregunta2">
+                <div class="sub-titulo">¿CUÁLES SON LOS TIPOS DE DATOS JS?</div>
+
+                <div class="contenedor-respuesta contenedor-mitad">
+                    <div class="texto">
+                        <p>En JavaScript existen ocho tipos de datos. Mantén el cursor encima de cada tipo de dato y descubre sus ejemplos &#128512.</p>
+                    <ul>
+                        <li>
+                            <span class="dato">1. Números:</span>
+                            <span class="descripcion"><span style="color: green;">let</span> <span style="color: orange;">age</span> = <span style="color:lightblue;">22;</span>
+                        </li>
+                        <li>
+                            <span class="dato">2. BigInts:</span>
+                            <span class="descripcion"><span style="color: green;">const</span> <span style="color: orange;">bigInt</span> = <span style="color:lightblue;">1456284536789389443n;</span>
+                        </li>
+                        <li>
+                            <span class="dato">3. Booleanos:</span>
+                            <span class="descripcion"><span style="color: green;">let</span> <span style="color: orange;">my_truth</span> = <span style="color:lightblue;">True;</span> o <span style="color: green;">let</span> <span style="color: orange;">my_not_truth</span> = <span style="color:lightblue;">False;</span>
+                        </li>
+                        <li>
+                            <span class="dato">4. Strings o cadenas:</span>
+                            <span class="descripcion"><span style="color: green;">let</span> <span style="color: orange;">welcome</span> = <span style="color:lightblue;">"Hello World.";</span>
+                        </li>
+                        <li>
+                            <span class="dato">5. Valor Nulo:</span>
+                            <span class="descripcion"><span style="color: green;">let</span> <span style="color: orange;">my_null</span> = <span style="color:lightblue;">null;</span>
+                        </li>
+                        <li>
+                            <span class="dato">6. Indefindo (undefined):</span>
+                            <span class="descripcion"><span style="color: green;">let</span> <span style="color: orange;">notDefinied;</span>
+                        </li>
+                        <li>
+                            <span class="dato">7. Símbolos:</span>
+                            <span class="descripcion"><span style="color: green;">let</span> <span style="color: orange;">my_sym</span> = <span style="color:lightblue;">Symbol('click event');</span>
+                        </li>
+                        <li>
+                            <span class="dato">8. Objetos:</span>
+                            <span class="descripcion"><span style="color: green;">let</span> <span style="color: orange;">my_object</span> = <span style="color:lightblue;">{"nombre": "Juan", "edad": 30};</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pregunta" id="pregunta3">
+                <div class="sub-titulo">¿CUÁLES SON LAS FUNCIONES DE STRINGS MÁS COMUNES EN JS?</div>
+                <div class="contenedor-respuesta contenedor-mitad">
+                    <div class="texto">
+                        <p>Para ver las diferentes funciones que existen para manipular cadenas en JavaScript, lo primero que vamos a hacer es crear una cadena/string llamado my_string con el que poder ver diferentes ejemplos.</p>
+                        <div class="codigo-fuente">
+                            <span style="color: green;">const</span> <span style="color: orange;">my_string</span> = <span style="color:lightblue;">'Hello World';</span>
+                        </div>
+                        <p class="alinear nombre-funcion">FUNCIÓN 1: Saber el caracter que está alojado en un index/posición específico. Su sintaxis es: .charAt(n); donde n es el index que queremos buscar. En nuestro ejemplo queremos averiguar cuál es el caracter en la posición 6:</p>
+                        <div class="codigo-fuente">
+                            <span style="color: rgb(172, 76, 172);">console.log(</span><span style="color: orange;">"El carácter en la posición 6 es: ", my_string</span><span style="color: green;">.charAt</span> = <span style="color:lightblue;">(6)</span><span style="color: rgb(172, 76, 172);">);</span>
+                        </div>
+                        <div class="imagen-ejemplo">
+                            <img src="images/ejemplo1.png"></img>
+                        </div>
+                        <div class="aviso">
+                            <p class="aviso-rojo">¡ AVISO IMPORTANTE ! Debemos aclarar, que en JavaScript como en cualquier otro lenguaje, las posiciones empiezan contando desde el 0, incluyendo este último. En nuestro ejemplo:<br></p>
+                            <div class="texto3">
+                                <p>
+                                    H = posición 0<br>
+                                    e = posición 1<br>
+                                    l = posición 2<br>
+                                    l = posición 3<br>
+                                    o = posición 4<br> etc...
+                                </p>    
+                            </div>
+                        </div>
+                        <p class="alinear nombre-funcion">FUNCIÓN 2: Concatenar otro string o un texto a nuestro string actual. Su sintaxis es: .concat(' mi texto') o .concat(mi_otro_string);. Vamos a poner 2 ejemplos, el primero será concatenar nuestro string con un texto, y el segundo será concater nuestro string con otro string.</p>
+                        <p class="alinear"> FORMA 1: Concatenar nuestro string con un texto:</p>
+                        <div class="codigo-fuente">
+                            <span style="color: rgb(172, 76, 172);">console.log(</span><span style="color: orange;">my_string</span><span style="color: green;">.concat</span><span style="color:lightblue;">(', Welcome!')</span><span style="color: rgb(172, 76, 172);">);</span>
+                        </div>
+                        <div class="imagen-ejemplo">
+                            <img src="images/ejemplo2.png"></img>
+                        </div>
+                        <p class="alinear">FORMA 2: Concatenar nuestro string con otro string, para ello creamos el nuevo string llamado my_other_string y luego llamamos a la función concatenar.</p>
+                        <div class="codigo-fuente">
+                            <span style="color: green;">const</span> <span style="color: orange;">my_other_string </span> = <span style="color:lightblue;"> ', its a beautiful day!'; </span>
+                        </div>
+                        <div class="codigo-fuente">
+                            <span style="color: rgb(172, 76, 172);">console.log(</span><span style="color: orange;">my_string</span><span style="color: green;">.concat</span><span style="color:lightblue;">(my_other_string)</span><span style="color: rgb(172, 76, 172);">);</span>
+                        </div>
+                        <div class="imagen-ejemplo">
+                            <img src="images/ejemplo3.png"></img>
+                        </div>
+                        <p class="alinear nombre-funcion">FUNCION 3: Buscar un string dentro de nuestro string. Su sintaxis es .includes('string a buscar');. Al igual que en la función anterior, podemos buscar un string nuevo ee incluso un string ya declarado. Esta función devuelve True si encuentra el string, y False si no lo encuentra. Vamos a ver otros 2 ejemplos.</p>
+                        <p class="alinear"> FORMA 1: Buscar un string cualquiera dentro de nuestro string.</p>
+                        <div class="codigo-fuente">
+                            <span style="color: rgb(172, 76, 172);">console.log(</span><span style="color: orange;">my_string</span><span style="color: green;">.includes</span><span style="color:lightblue;">('World')</span><span style="color: rgb(172, 76, 172);">);</span>
+                        </div>
+                        <div class="imagen-ejemplo">
+                            <img src="images/ejemplo4.png"></img>
+                        </div>
+                        <p class="alinear"> FORMA 2: Buscar un string ya declarado dentro de nuestro string.</p>
+                        <div class="codigo-fuente">
+                            <span style="color: green;">const</span> <span style="color: orange;">find_my_string </span> = <span style="color:lightblue;"> 'great'; </span>
+                        </div>
+                        <div class="codigo-fuente">
+                            <span style="color: rgb(172, 76, 172);">console.log(</span><span style="color: orange;">my_string</span><span style="color: green;">.includes</span><span style="color:lightblue;">(find_my_string)</span><span style="color: rgb(172, 76, 172);">);</span>
+                        </div>
+                        <div class="imagen-ejemplo">
+                            <img src="images/ejemplo5.png"></img>
+                        </div>
+                        <div class="aviso">
+                            <p class="aviso-rojo">¡ AVISO IMPORTANTE ! Esta función tiene en cuenta las mayúsculas y minúsculas, por lo que al hacer la búsqueda el string buscado debe ser exactamente igual que donde se busca teniendo en centa mayúsculas y minúsculas. Veamos los ejemplos siguientes.<br></p>
+                        </div>
+                        <div class="codigo-fuente">
+                            <span style="color: rgb(172, 76, 172);">console.log(</span><span style="color: orange;">my_string</span><span style="color: green;">.includes</span><span style="color:lightblue;">('Hello')</span><span style="color: rgb(172, 76, 172);">);</span>
+                        </div>
+                        <div class="imagen-ejemplo">
+                            <img src="images/ejemplo6.png"></img>
+                        </div>
+                        <div class="codigo-fuente">
+                            <span style="color: rgb(172, 76, 172);">console.log(</span><span style="color: orange;">my_string</span><span style="color: green;">.includes</span><span style="color:lightblue;">('hello')</span><span style="color: rgb(172, 76, 172);">);</span>
+                        </div>
+                        <div class="imagen-ejemplo">
+                            <img src="images/ejemplo7.png"></img>
+                        </div>
+                        <p class="alinear nombre-funcion">FUNCION 4: Devuelve True o False si nuestro string empieza con el string dado. Su sintaxis es .startsWith('palabra'); . Como en las funciones anteriores, también se puede buscar por string nuevo y por string ya declarado. </p>
+                        <div class="codigo-fuente">
+                            <span style="color: rgb(172, 76, 172);">console.log(</span><span style="color: orange;">my_string</span><span style="color: green;">.startsWith</span><span style="color:lightblue;">('Hello')</span><span style="color: rgb(172, 76, 172);">);</span>
+                        </div>
+                        <div class="imagen-ejemplo">
+                            <img src="images/ejemplo6.png"></img>
+                        </div>
+                        <div class="aviso">
+                            <p class="aviso-rojo">¡ AVISO IMPORTANTE ! Esta función también tiene en cuenta las mayúsculas y minúscúsculas.</p>
+                        </div>
+                        <p class="alinear nombre-funcion">FUNCION 5: Repite el string que tenemos tantas veces como solicitemos. Su sintaxis es .repeat(n); donde n es el número de veces que queremos repetir nuestro string. Veamos un ejemplo. </p>
+                        <div class="codigo-fuente">
+                            <span style="color: rgb(172, 76, 172);">console.log(</span><span style="color: orange;">my_string</span><span style="color: green;">.repeat</span><span style="color:lightblue;">(5)</span><span style="color: rgb(172, 76, 172);">);</span>
+                        </div>
+                        <div class="imagen-ejemplo">
+                            <img src="images/ejemplo8.png"></img>
+                        </div>
+                        <p class="alinear nombre-funcion">FUNCION 6: Reemplaza una palabra de nuestro string con la palabra que queramos. Su sintaxis es .replace('palabra_a_reemplazar', 'palabra_nueva');  </p>
+                        <div class="codigo-fuente">
+                            <span style="color: rgb(172, 76, 172);">console.log(</span><span style="color: orange;">my_string</span><span style="color: green;">.replace</span><span style="color:lightblue;">('World', 'Sunshine')</span><span style="color: rgb(172, 76, 172);">);</span>
+                        </div>
+                        <div class="imagen-ejemplo">
+                            <img src="images/ejemplo9.png"></img>
+                        </div>
+                        <p>Existen muchas otras funciones que podemos utilizar para manejar los strings en JavaScript, si quieres descubrir más haz <a href="https://www.python.org/">click aquí.</a></p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="pregunta" id="pregunta4">
+                <div class="sub-titulo">¿QUÉ ES UN CONDICIONAL?</div>
+
+                <div class="contenedor-respuesta contenedor-mitad">
+                    <div class="texto">
+                        <p>Las condicionales en programación son como las decisiones que tomamos en la vida cotidiana. Nos permiten elegir diferentes caminos en función de ciertas situaciones. Por ejemplo, imagina que estás decidiendo si llevar un paraguas o no. Si está lloviendo, decides llevarlo; si no, decides dejarlo en casa. En programación, las condicionales hacen lo mismo: evalúan una situación (como si está lloviendo o no) y ejecutan cierto código según el resultado (llevar o no llevar el paraguas). 
+                            <br>Esto nos da control sobre cómo se comporta nuestro programa en diferentes escenarios.
+                            <br> Vamos a ver los 3 tipos de condicionales más utilizados en JavaScript.
+                        </p> 
+                        <p class="alinear nombre-funcion">Condicional if:</p>
+                        <p>Permite ejecutar un bloque de código si una condición especificada es verdadera. Si la expresión dentro de esta condición es evaluada como verdadera, se ejecutará la instrucción definida dentro del bloque if; en caso contrario, si la expresión es falsa, la instrucción no se ejecutará.</p>
+                        
+                        <div class="codigo-fuente codigo-fuente-largo">
+                            <div class="centrar">
+                                <span style="color: rgb(147, 175, 196);">const</span> <span style="color: rgb(15, 125, 209);">my_number</span> = <span style="color: rgb(46, 219, 101);">19</span>;
+                                <br>
+                                <span style="color: rgb(156, 27, 179);">if</span> (<span style="color: rgb(15, 125, 209);">my_number</span> >= <span style="color: rgb(46, 219, 101);">18</span>) {
+                                <br>
+                                <span style="color: rgb(172, 76, 172);">console.log</span>(<span style="color: rgb(130, 112, 12);">"You are enought old to drive."</span>);
+                                <br>
+                                }
+                                <br>
+                            </div> 
+                        </div>
+                        <div class="imagen-ejemplo">
+                            <img src="images/ejemplo10.png"></img>
+                        </div>
+                        <div class="espacio"></div>
+
+                        <div class="codigo-fuente codigo-fuente-largo">
+                            <div class="centrar">
+                                <span style="color: rgb(147, 175, 196);">const</span> <span style="color: rgb(15, 125, 209);">my_number</span> = <span style="color: rgb(46, 219, 101);">13</span>;
+                                <br>
+                                <span style="color: rgb(156, 27, 179);">if</span> (<span style="color: rgb(15, 125, 209);">my_number</span> >= <span style="color: rgb(46, 219, 101);">18</span>) {
+                                <br>
+                                <span style="color: rgb(172, 76, 172);">console.log</span>(<span style="color: rgb(130, 112, 12);">"You are enought old to drive."</span>);
+                                <br>
+                                }
+                                <br>
+                            </div> 
+                        </div>
+                        <div class="imagen-ejemplo">
+                            <img src="images/ejemplo11.png"></img>
+                        </div>
+                        <p>En nuestro ejemplo, si el número es mayor o igual que 18, nos imprimirá en pantalla: You are enought old to drive, y si es menor que 18, no imprimirá nada.</p>
+
+                        <p class="alinear nombre-funcion">Condicional if - else:</p>
+                        <p>La declaración else se ejecuta únicamente si la condición evaluada por la declaración if resulta ser falsa. En otras palabras, cuando la instrucción dentro del if no se ejecuta debido a que la condición es falsa, entonces la instrucción dentro del bloque else es la que se ejecuta. 
+                            <br>Esto proporciona una bifurcación en la lógica del programa, permitiendo definir acciones alternativas cuando la condición inicial no se cumple.</p>
+                        
+                        <div class="codigo-fuente codigo-fuente-largo">
+                            <div class="centrar">
+                                <span style="color: rgb(147, 175, 196);">const</span> <span style="color: rgb(15, 125, 209);">my_number</span> = <span style="color: rgb(46, 219, 101);">19</span>;
+                                <br>
+                                <span style="color: rgb(156, 27, 179);">if</span> (<span style="color: rgb(15, 125, 209);">my_number</span> >= <span style="color: rgb(46, 219, 101);">18</span>) {
+                                <br>
+                                <span style="color: rgb(172, 76, 172);">console.log</span>(<span style="color: rgb(130, 112, 12);">"You are enought old to drive."</span>);
+                                <br>
+                                <span style="color: rgb(156, 27, 179);">else</span> {
+                                <br>
+                                <span style="color: rgb(172, 76, 172);">console.log</span>(<span style="color: rgb(130, 112, 12);">"You are not enought old to drive."</span>);
+                                <br>
+                                }}
+                                <br>
+                                <div class="imagen-ejemplo">
+                                    <img src="images/ejemplo10.png"></img>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="espacio"></div>
+                        <div class="codigo-fuente codigo-fuente-largo">
+                            <div class="centrar">
+                                <span style="color: rgb(147, 175, 196);">const</span> <span style="color: rgb(15, 125, 209);">my_number</span> = <span style="color: rgb(46, 219, 101);">12</span>;
+                                <br>
+                                <span style="color: rgb(156, 27, 179);">if</span> (<span style="color: rgb(15, 125, 209);">my_number</span> >= <span style="color: rgb(46, 219, 101);">18</span>) {
+                                <br>
+                                <span style="color: rgb(172, 76, 172);">console.log</span>(<span style="color: rgb(130, 112, 12);">"You are enought old to drive."</span>);
+                                <br>
+                                <span style="color: rgb(156, 27, 179);">else</span> {
+                                <br>
+                                <span style="color: rgb(172, 76, 172);">console.log</span>(<span style="color: rgb(130, 112, 12);">"You are not enought old to drive."</span>);
+                                <br>
+                                }}
+                                <br>
+                                <div class="imagen-ejemplo">
+                                    <img src="images/ejemplo12.png"></img>
+                                </div>
+                            </div>
+                        </div>
+                        <p>En este ejemplo, si el número dado es mayor o igual que 18, nos imprimirá: You are enough old to drive, y si es menor que 18, nos imprimirá: You are not enough old to drive. </p>
+    
+                        <p class="alinear nombre-funcion">Condicional if - else if - else:</p>
+                        <p> Este tipo de condicinales, funcionan igual que los anteriores, con la peculiaridad, de que teniendo en cuenta que if y else sólo se pueden usar 1 vez y por esta razón solo podemos tener 2 condiciones, else if se puede usar tantas veces como queramos dándonos la oportunidad de incluír más que 2 condiciones.
+                            <br> 
+                            La sintaxis es igual, pero el orden es:
+                            <br>1. if 
+                            <br>2. else if 
+                            <br>3. else
+                        </p>
+                        <p> Vamos a poner un simple ejemplo:</p>
+                        <div class="codigo-fuente codigo-fuente-largo">
+                            <div class="centrar">
+                                <span style="color: rgb(147, 175, 196);">const</span> <span style="color: rgb(15, 125, 209);">mi_edad</span> = <span style="color: rgb(46, 219, 101);">20</span>;
+                                <br>
+                                <span style="color: rgb(156, 27, 179);">if</span> (<span style="color: rgb(15, 125, 209);">mi_edad</span><span style="color: rgb(46, 219, 101);"> < 18</span>) {
+                                <br>
+                                <span style="color: rgb(172, 76, 172);">console.log</span>(<span style="color: rgb(130, 112, 12);">"Eres menor de edad."</span>);
+                                <br>
+                                }
+                                <span style="color: rgb(156, 27, 179);">else if ( <span style="color: rgb(15, 125, 209);">mi_edad</span><span style="color: rgb(46, 219, 101);"> > 18 && <span style="color: rgb(15, 125, 209);">mi_edad</span> < 65</span>)</span> {
+                                <br>
+                                <span style="color: rgb(172, 76, 172);">console.log</span>(<span style="color: rgb(130, 112, 12);">"Eres mayor de edad pero aún no estás jubilado."</span>);
+                                <br>
+                                <span style="color: rgb(156, 27, 179);">else</span> {
+                                <br>
+                                <span style="color: rgb(172, 76, 172);">console.log</span>(<span style="color: rgb(130, 112, 12);">"Eres mayor de edad y ya estás jubilado."</span>);
+                                <br>
+                                }}
+                                <br>
+                                <div class="imagen-ejemplo">
+                                    <img src="images/ejemplo13.png"></img>
+                                </div>
+                            </div>
+                        </div>
+                        <p>En este ejemplo, tenemos 3 condiciones, el primero es si mi_edad es menor que 18, entonces nos devolverá "Eres menor de edad", el segundo es que la edad debe comprender entre los números 18 y 65, y en este caso nos imprimirá "Eres mayor de edad pero aún no estás jubilado", y la tercera condición es para el resto de números, es decir los que todavía no hemos recogido con nuestras 2 condiciones anteriores, es decir todos los números que sean mayores que 65, y nos imprimirá "Eres mayor de edad y ya estás jubilado.".</p>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta" id="pregunta5">
+                <div class="sub-titulo">¿QUÉ ES UN OPERADOR TERNARIO?</div>
+                <div class="contenedor-respuesta contenedor-mitad">
+                    <div class="texto">
+                        <p>El operador ternario se podría decir que es un atajo de la condicional if - else. Es decir es una forma más sencilla de declarar y devolver la respuesta a nuestras condiciones. 
+                        <br>Como es un if - else, sólo podemos tener 2 condiciones como en los casos originales.</p>
+                        <p>Su sintaxis en JavaScript es: <span style="color: green;">const</span> <span style="color: orange;">resultado</span> = <span style="color:rgb(143, 145, 31);">(condicion)</span> ? <span style="color:lightblue;">valor_si_verdadero</span> : <span style="color:lightblue;">valor_si_falso;</span> donde resultado es la variable donde guardaremos nuestra respuesta para luego poder imprimirlo.
+                        </p>
+                        <p>Vamos a poner un ejemplo claro:</p>
+                        <div class="codigo-fuente codigo-fuente-largo">
+                            <div class="centrar">
+                                <span style="color: rgb(147, 175, 196);">const</span> <span style="color: rgb(15, 125, 209);">num</span> = <span style="color: rgb(46, 219, 101);">11</span>;
+                                <br>
+                                <span style="color: rgb(147, 175, 196);">const</span> <span style="color: rgb(15, 125, 209);">mensaje</span> = <span style="color: rgb(143, 145, 31);">(num > 0) </span> ? <span style="color:lightblue;"> "El número es positivo" </span> : <span style="color:lightblue;">"El número es negativo";</span>
+                                <br>
+                                <span style="color: rgb(172, 76, 172);">console.log</span><span style="color: rgb(15, 125, 209);">(mensaje)</span>
+                                <div class="imagen-ejemplo">
+                                    <img src="images/ejemplo14.png"></img>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="espacio"></div>
+                        <div class="codigo-fuente codigo-fuente-largo">
+                            <div class="centrar">
+                                <span style="color: rgb(147, 175, 196);">const</span> <span style="color: rgb(15, 125, 209);">num</span> = <span style="color: rgb(46, 219, 101);">-12</span>;
+                                <br>
+                                <span style="color: rgb(147, 175, 196);">const</span> <span style="color: rgb(15, 125, 209);">mensaje</span> = <span style="color: rgb(143, 145, 31);">(num > 0) </span> ? <span style="color:lightblue;"> "El número es positivo" </span> : <span style="color:lightblue;">"El número es negativo";</span>
+                                <br>
+                                <span style="color: rgb(172, 76, 172);">console.log</span><span style="color: rgb(15, 125, 209);">(mensaje)</span>
+                                <div class="imagen-ejemplo">
+                                    <img src="images/ejemplo15.png"></img>
+                                </div>
+                            </div>
+                        </div>
+                        <p>En nuestro ejemplo, tenemos un número, y queremos saber si ese número es positivo o negativo, por lo que escribiremos la condicion, si num es mayor que 0, imprímeme "El número es positivo" , en caso contrario, imprímeme "El número es negativo.".</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pregunta" id="pregunta6">
+                <div class="pregunta" id="pregunta5">
+                    <div class="sub-titulo">¿DECLARACIÓN DE FUNCIÓN O EXPRESIÓN DE FUNCIÓN?</div>
+                    <div class="contenedor-respuesta contenedor-mitad">
+                        <div class="texto">
+                            <p>Declaración de función y expresión de función son 2 formas diferentes de <span style="color: green";>crear</span> funciones.</p>
+                            <p>Vamos a poner 1 ejemplo de cada una para entender mejor sus diferencias.</p>
+                            <div class="doble-columna">
+                                <div class="codigo-fuente codigo-fuente-largo">
+                                    <div class="centrar">
+                                        <div class="imagen-ejemplo">
+                                            <img src="images/ejemplo16.png"></img>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="codigo-fuente codigo-fuente-largo">
+                                    <div class="centrar">
+                                        <div class="imagen-ejemplo">
+                                            <img src="images/ejemplo17.png"></img>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>  La principal diferencia entre una <span style="color: rgb(111, 235, 49)">declaración de función</span> y una <span style="color: rgb(29, 88, 171)">expresión de función</span> es cómo se asigna y se utiliza en el código. En una expresión de función, la función se asigna a una variable, mientras que en una declaración de función, el nombre de la función se utiliza directamente para llamarla.</p>
+                            <p> En resumen, la elección entre una declaración de función y una expresión de función depende de la situación particular y de las necesidades de legibilidad, flexibilidad y reutilización del código en un contexto específico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pregunta" id="pregunta7">
+                <div class="sub-titulo">¿QUÉ ES LA PALABRA CLAVE 'this'?</div>
+                    <div class="contenedor-respuesta contenedor-mitad">
+                        <div class="texto">
+                            <p>En JavaScript, la palabra clave <span style="color: rgb(74, 189, 204); font-weight: bold;">this</span> siempre se refiere a un objeto. Lo que pasa es que el objeto al que se refiere variará dependiendo de cómo y dónde se llame this.
+                            <br>Hay varias formas de usar la palabra clave this, en esta sección vamos a ver cómo se utiliza y cómo se comporta cuando se llama dentro de un método de un objeto.
+                            <p>En ese caso hace referencia al objeto en el que se llamó el método.</p>
+                            <div class="aviso">
+                                <p class="aviso-rojo">¡ AVISO ! hay que aclarar que this no es una variable, es una palabra clave, por lo que su valor no se puede cambiar ni reasignar.</p>
+                            </div>
+                            <div class="centrar">
+                                <div class="imagen-ejemplo1">
+                                    <img src="images/ejemplo18.png"></img>
+                                </div>
+                            </div>
+                            <div class="centrar">
+                                <div class="imagen-ejemplo1">
+                                    <img src="images/ejemplo19.png"></img>
+                                </div>
+                            </div>
+                            <p>Usar "this" dentro de un método de un objeto permite acceder a las propiedades y métodos de ese objeto de manera dinámica.</p>
+                            <p>¿Y por qué usar this y no utilizar directamente el nombre de nuestras variables?</p>
+                            <div class="centrar">
+                                <div class="imagen-ejemplo1">
+                                    <img src="images/ejemplo20.png"></img>
+                                </div>
+                            </div>
+                            <p>Porque  "this" se utiliza para referirse al objeto actual dentro de un método de un objeto, mientras que {usuario} por sí solo no tiene un significado específico en este contexto y dará como resultado un error de referencia no definida.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#header" class="btn-up" target="_top">
+            <i class="fa-solid fa-up-long"></i>
+        </a>
+
+        <div class="pie-pagina">
+            <div class="copywright">
+                <a href="#header">&copy; 2024 alharuty &#124; Ejercicio realizado para Checkpoint7</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

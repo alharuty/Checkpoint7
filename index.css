@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.mi-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor img {
+    width: 10%;
+    padding: 10px;
+    height: auto;
+}
+
+.pregunta {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-titulo {
+    border: 2px solid #efd81d;
+    color: #efd81d;
+    font-size: 1.3em;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.contenedor-respuesta {
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-mitad > .texto{
+    width: 50%;
+}
+.texto {
+    text-align:justify;
+    background-color: rgb(39, 37, 37);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    line-height: 1.9;
+    width: 100%;
+}
+
+.demostracion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+.imagen,
+.imagen-ejemplo,
+.imagen-ejemplo1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen img {
+    width: 60%;
+}
+.imagen-ejemplo1 img {
+    width: 60%;
+    padding: 10px;
+}
+
+.imagen > .texto {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.texto1 {
+    text-align: left;
+}
+.texto3 {
+    text-align: center;
+}
+li {
+    list-style: none;
+    padding: 10px;
+    align-items: left;
+    cursor: pointer; /* Hace que el cursor se convierta en una mano al pasar sobre los elementos li */
+}
+
+/* Estilo predeterminado para las descripciones */
+.descripcion {
+    display: none; /* Oculta las descripciones por defecto */
+    border: 1px solid #efd81d;
+    color: white;
+    padding: 10px;
+}
+
+/* Mostrar la descripción y ocultar el dato cuando pasamos el cursor sobre el elemento li */
+li:hover .descripcion {
+    display: block;
+}
+
+/* Ocultar el número o nombre del dato cuando pasamos el cursor sobre el elemento li */
+li:hover .dato {
+    display: none;
+}
+
+/* Estilo para el número o nombre del dato */
+.dato {
+    font-weight: bold; /* Hace que el número o nombre del dato sea negrita */
+}
+
+.alinear {
+    text-align: center;
+    border: 1px solid #efd81d;
+}
+
+.codigo-fuente {
+    text-align: center;
+}
+
+.aviso-rojo {
+    background-color: rgb(153, 8, 8);
+    padding: 10px;
+    text-align: center;
+}
+
+.imagen-ejemplo img {
+    width: 300px;
+}
+
+.nombre-funcion,
+.alinear {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    background-color: #efd81d;
+    cursor: pointer;
+    color: black;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 1500px) {
+    .contenedor-mitad > .texto{
+        width: 90%;
+    }
+}
+
+.codigo-fuente-largo {
+    display: flex;
+    justify-content: center;
+}
+
+.centrar {
+    text-align: left;
+}
+
+.espacio {
+    height: 10px;
+    border-bottom: 1px solid white;
+}
+
+.doble-columna > .codigo-fuente{
+    padding: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .doble-columna {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .imagen-ejemplo1 img{
+        width: 100%;;
+    }
+}
+
+.btn-up {
+    position: fixed;
+    line-height: 55px;
+    bottom: 45px;
+    right: 30px;
+    font-size: 30px;
+    color:  #efd81d;
+}
+
+.pie-pagina {
+    background-color: black;
+    color:  #efd81d;
+    height: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.copywright {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.copywright a {
+    text-decoration: none;
+    color: white; 
+}
+.copywright a:hover {
+    color: #111125;
+}
